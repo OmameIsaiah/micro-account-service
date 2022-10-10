@@ -11,8 +11,9 @@ import org.springframework.context.annotation.PropertySource;
 
 
 //@PropertySource(value = "file:/opt/appdocs/jenkins/accountmicroservice/application.yml", ignoreResourceNotFound = true)
-@PropertySource(value = "file:/opt/appdocs/jenkins/accountmicroservice/application.properties", ignoreResourceNotFound = true)
+//@PropertySource(value = "file:/opt/appdocs/jenkins/accountmicroservice/application.properties", ignoreResourceNotFound = true)
 //@PropertySource(value = "file:C:\\SwipeTech\\Projects\\MICROSERVICES_GIT\\APPLICATION-PROPERTIES\\account-micro-service\\application.yml", ignoreResourceNotFound = true)
+@PropertySource(value = "file:C:\\SwipeTech\\Projects\\MICROSERVICES_GIT\\APPLICATION-PROPERTIES\\account-micro-service\\application.properties", ignoreResourceNotFound = true)
 
 //@Configuration
 @EnableEurekaClient
