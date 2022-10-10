@@ -5,8 +5,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 //import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 //import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+
+@PropertySource(value = "file:/opt/appdocs/jenkins/accountmicroservice/application.yml", ignoreResourceNotFound = true)
+//@PropertySource(value = "file:C:\\SwipeTech\\Projects\\MICROSERVICES_GIT\\APPLICATION-PROPERTIES\\account-micro-service\\application.yml", ignoreResourceNotFound = true)
 
 //@Configuration
 @EnableEurekaClient
